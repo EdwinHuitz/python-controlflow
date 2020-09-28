@@ -79,5 +79,27 @@ while i < goal:
    c=a+b
    a=b
    b=c
-   print(b)
+   print(f'term:{i} / number:{b}')
    i+=1
+#06-Seasons
+ms=('jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec')
+month=str(input('Enter the month as three characters: '))
+day=int(input('Enter the day of that month: '))
+for m in ms:
+   if month ==m:
+      if m == ms[0]:print(f'January {day} is in Winter')
+      if m == ms[1]:print(f'February {day} is in Winter')
+      if m == ms[2] and day<= 19:print(f'March {day} is in Winter')
+      elif m == ms[2] and day>= 20:print(f'March {day} is in Spring')
+      if m == ms[3]:print(f'April {day} is in Spring')
+      if m == ms[4]:print(f'May {day} is in Spring')
+      if m == ms[5] and day<=20:print(f'June {day} is in Spring')
+      elif m == ms[5] and day>=21:print(f'June {day} is in Summer')
+      if m == ms[6]:print(f'July {day} is in Summer')
+      if m == ms[7]:print(f'August {day} is in Summer')
+      if m == ms[8] and day<=21:print(f'September {day} is in Summer')
+      elif m == ms[8] and day>=22:print(f'September {day} is in Fall')
+      if m == ms[9]:print(f'October {day} is in Fall')
+      if m == ms[10]:print(f'November {day} is in Fall')
+      if m == ms[11] and day<=20:print(f'December {day} is in Fall')
+      elif m == ms[11] and day>=21:print(f'December {day} is in Winter')
